@@ -1,37 +1,3 @@
-
-# react-native-dnssd
-
-## Getting started
-
-`$ npm install react-native-dnssd --save`
-
-Linking is not needed since react native 0.60
-
-## Usage
-```javascript
-
-import { DNSSD } from 'react-native-dnssd';
-
-const foundSub = DNSSD.addEventListener("serviceFound", (service) => {
-	console.log("Service Found", service);
-});
-const lostSub = DNSSD.addEventListener("serviceLost", (service) => {
-	console.log("Service Lost", service);
-});
-DNSSD.startSearch("airplay", "tcp");
-
-setTimeout(() => {
-	DNSSD.stopSearch();
-	foundSub.remove();
-	lostSub.remove();
-}, 30000);
-
-```
-
-## Example
-```javascript
-import { DNSSD } from 'react-native-dnssd';
-
 import React, { Component } from 'react';
 import {
   FlatList,
@@ -139,6 +105,3 @@ const styles = StyleSheet.create({
     fontFamily: Platform.OS === 'ios' ? 'Courier' : 'monospace'
   },
 });
-
-```
-  
