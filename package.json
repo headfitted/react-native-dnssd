@@ -1,7 +1,7 @@
 {
   "name": "react-native-dnssd",
   "version": "0.2.3",
-  "description": "",
+  "description": "React native bonjour/zeroconf",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
