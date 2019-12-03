@@ -7,6 +7,9 @@
 
 Linking is not needed since react native 0.60
 
+If you encounter the following error `Native Module cannot be null` add the following line to your `ios/Podfile`:
+`pod 'react-native-dnssd', path: '../node_modules/react-native-dnssd'`
+
 ## Usage
 ```javascript
 

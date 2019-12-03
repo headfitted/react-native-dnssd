@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kopera/react-native-dnssd.git"
+    "url": "git://github.com/headfitted/react-native-dnssd.git"
   },
   "peerDependencies": {
     "react-native": ">= 0.60.0"
